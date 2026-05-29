@@ -1,6 +1,6 @@
 # Gabriele Pecchi
 
-**Biomedical Engineer · Applied AI · Retrieval Systems · ML Evaluation**
+**Biomedical AI · Model Evaluation · Benchmark Design · Retrieval Systems**
 
 ---
 
