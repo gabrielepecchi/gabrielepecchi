@@ -47,9 +47,9 @@ Leakage-aware ML benchmark for Parkinson's Disease vs. Healthy Control classific
 Local benchmark for patient-to-trial eligibility reasoning using synthetic Parkinson's patients and public ClinicalTrials.gov trial criteria.
 
 - LLM-reviewed draft labels over 150 evaluated patient–trial pairs (not clinical gold truth)
-- Current results: Accuracy 0.440 · Macro F1 0.439
-- Includes local pipeline, error analysis, and no real patient data
-- Transparent about label quality and scope limitations
+- Current results: Accuracy 0.687 · Macro F1 0.686
+- Includes local pipeline, criterion-level reasoning, robustness checks, error analysis, and HTML benchmark report
+- Fully synthetic patients; no real patient data; not clinical decision support
 
 ---
 
