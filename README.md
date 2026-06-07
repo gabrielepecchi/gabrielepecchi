@@ -1,77 +1,71 @@
 # Gabriele Pecchi
 
-**Biomedical AI · Model Evaluation · Benchmark Design · Retrieval Systems**
+**AI Evaluation · Benchmark Design · Structured Reasoning · Retrieval Systems**
 
 ---
 
-Biomedical Engineering graduate working at the intersection of machine learning, clinical data retrieval, and wearable sensing. My focus is on building honest, reproducible benchmarks — particularly for Parkinson's Disease research — with rigorous evaluation methodology and transparent reporting, including negative results. I also have hands-on experience in AI data annotation, model output evaluation, dataset validation, and quality control workflows.
+## About Me
+
+I focus on AI evaluation and benchmark design — building structured frameworks that produce honest, reproducible results. My work emphasizes evaluation methodology: leakage-free design, criterion-level reasoning, error analysis, and transparent reporting of limitations and negative results. I have hands-on experience in LLM output evaluation, annotation QC, and dataset validation workflows.
+
+My background is in Biomedical Engineering, which is where my projects are grounded — but the skills are methodological, not domain-specific.
 
 ---
 
-## Main Focus Areas
+## What I Work On
 
-- Biomedical information retrieval (BM25, semantic embeddings, hybrid ranking)
-- Leakage-free ML evaluation for wearable IMU time-series
-- Clinical trial eligibility reasoning and LLM-assisted benchmarking
-- Subject-independent and LOSO evaluation design for clinical ML
-- AI output evaluation, annotation quality, and dataset validation
+- Designing leakage-free ML evaluation pipelines with reproducible methodology
+- Structured LLM output evaluation: criterion-level reasoning, error analysis, failure mode documentation
+- Annotation QC and dataset validation workflows
+- Hybrid information retrieval with graded evaluation (BM25, semantic embeddings, hybrid ranking)
+- Subject-independent cross-validation for time-series classification
 
 ---
 
 ## Featured Projects
 
-### [`biomedical-evidence-retrieval`](https://github.com/gabrielepecchi/biomedical-evidence-retrieval)
+### [`clinical-trial-eligibility-benchmark`](https://github.com/gabrielepecchi/clinical-trial-eligibility-benchmark)
 
-FastAPI + Streamlit biomedical search system over Parkinson's ClinicalTrials.gov records.
+Structured benchmark for LLM-assisted eligibility reasoning across 150 synthetic patient–trial pairs.
 
-- Hybrid retrieval pipeline combining BM25, semantic embeddings, and hybrid ranking with optional filters
-- Grounded template summaries and graded retrieval evaluation
-- Best hybrid result: Precision@5 0.9913 · Recall@10 0.9976 · MRR 1.0000 · nDCG@10 0.9453
-- SQLite backend; not clinical decision support
+- Criterion-level reasoning with robustness checks, error analysis, and an HTML benchmark report
+- LLM-reviewed draft labels; results reported with known limitations (Accuracy 0.687 · Macro F1 0.686)
+- Fully synthetic patients; not clinical decision support
 
 ---
 
 ### [`pads-imu-parkinson-benchmark`](https://github.com/gabrielepecchi/pads-imu-parkinson-benchmark)
 
-Leakage-aware ML benchmark for Parkinson's Disease vs. Healthy Control classification from wrist-worn PADS smartwatch IMU data.
+Leakage-aware ML benchmark for wearable IMU classification, built with strict evaluation hygiene.
 
-- Strict leakage-free evaluation: normalization fitted on training folds only, never on the full dataset
-- Subject-independent 5-fold cross-validation; models include Logistic Regression, Random Forest, and 1D-CNN v2
-- Best balanced model: Logistic Regression — Balanced Accuracy 0.6441 ± 0.0156, AUROC 0.7029 ± 0.0261
-- Focus is realistic evaluation, not inflated scores
-
----
-
-### [`clinical-trial-eligibility-benchmark`](https://github.com/gabrielepecchi/clinical-trial-eligibility-benchmark)
-
-Local benchmark for patient-to-trial eligibility reasoning using synthetic Parkinson's patients and public ClinicalTrials.gov trial criteria.
-
-- LLM-reviewed draft labels over 150 evaluated patient–trial pairs (not clinical gold truth)
-- Current results: Accuracy 0.687 · Macro F1 0.686
-- Includes local pipeline, criterion-level reasoning, robustness checks, error analysis, and HTML benchmark report
-- Fully synthetic patients; no real patient data; not clinical decision support
+- Normalization fitted on training folds only; subject-independent 5-fold cross-validation
+- Results with confidence intervals: balanced accuracy 0.6441 ± 0.0156, AUROC 0.7029 ± 0.0261
+- Designed for realistic evaluation, not inflated scores
 
 ---
 
-## Technical Skills
+### [`biomedical-evidence-retrieval`](https://github.com/gabrielepecchi/biomedical-evidence-retrieval)
 
-**Languages & Libraries**  
+FastAPI + Streamlit search system with a hybrid retrieval pipeline and full graded evaluation.
+
+- BM25, semantic embeddings, and hybrid ranking with optional filters
+- Evaluated with Precision@5, Recall@10, MRR, and nDCG@10; best hybrid result: MRR 1.0000 · nDCG@10 0.9453
+
+---
+
+## Skills
+
+**Evaluation & Benchmarking**
+Leakage-aware evaluation design · Structured output evaluation · Error analysis · Annotation QC · Dataset validation · Limitation documentation · Subject-independent cross-validation
+
+**Retrieval & ML**
+BM25 · Semantic embeddings · Hybrid ranking · Classical ML · 1D-CNN · Feature engineering · Threshold analysis
+
+**Languages & Libraries**
 Python · NumPy · Pandas · Scikit-learn · PyTorch · SciPy · FastAPI · Streamlit
 
-**ML & Retrieval**  
-BM25 · Semantic embeddings · Hybrid ranking · Classical ML · 1D-CNN · LOSO cross-validation · Subject-independent evaluation · Class weighting · Threshold analysis · Model explainability
-
-**Data & Pipelines**  
-IMU signal processing · Feature engineering · Leakage-aware preprocessing · Dataset validation · Annotation QC · SQLite
-
-**Tooling**  
-Git · Jupyter · SQL basics · REST API basics
-
----
-
-## Current Direction
-
-Building end-to-end biomedical AI tooling — retrieval systems for clinical and research data, structured evaluation frameworks, REST API development, and LLM-assisted benchmarking pipelines. The goal is tools that are methodologically sound, deployable, and maintainable in practice.
+**Tooling**
+Git · Jupyter · SQL · REST APIs
 
 ---
 
